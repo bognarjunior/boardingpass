@@ -1,11 +1,12 @@
-import { View, Text } from 'react-native'
+import { View, Text, ImageBackground } from 'react-native'
 import React from 'react';
 import { styles } from './styles'
 
 export default function Home() {
   return (
     <View style={styles.container}>
-      <Text>Home</Text>
+      <ImageBackground source={require('../../assets/cover.png')} style={styles.header}>
+      </ImageBackground>
     </View>
   )
 }
