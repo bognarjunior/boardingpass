@@ -1,6 +1,6 @@
 import { theme } from "@/theme";
 import { StyleSheet } from "react-native";
-const { colors } = theme;
+const { colors, fontFamily } = theme;
 
 export const styles = StyleSheet.create({
   container: {
@@ -13,5 +13,25 @@ export const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
-  }
+  },
+  title: {
+    color: colors.White,
+    fontSize: 24,
+    fontFamily: fontFamily.extraBold
+  },
+  subtitle: {
+    color: colors.Gray[300],
+    fontSize: 14,
+    fontFamily: fontFamily.medium
+  },
+  ticket: {
+    flex: 1,
+    width: "100%",
+    borderRadius: 22,
+    overflow: "hidden",
+    backgroundColor: colors.White,
+    paddingBottom: 24
+  },
+  content: {},
+  flight: {}
 })
