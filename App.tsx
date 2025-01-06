@@ -6,6 +6,8 @@ import {
   Poppins_800ExtraBold
 } from '@expo-google-fonts/poppins';
 import Home from '@/app/home';
+import React from 'react';
+import { StatusBar } from 'react-native';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -18,7 +20,10 @@ export default function App() {
     return null
   }
   return (
-    <Home />
+    <>
+      <StatusBar barStyle="light-content" backgroundColor="transparent" translucent/>
+      <Home />
+    </>
   );
 }
 

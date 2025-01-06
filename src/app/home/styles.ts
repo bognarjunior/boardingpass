@@ -60,5 +60,22 @@ export const styles = StyleSheet.create({
     fontSize: 24,
     fontFamily: fontFamily.medium,
   },
-  details: {}
+  details: {
+    marginTop: 52
+  },
+  inline: {
+    width: "100%",
+    flexDirection: "row",
+    justifyContent: "space-between",
+  },
+  footer:{
+    width: "100%",
+    padding: 20,
+    flexDirection: "row",
+    gap: 22
+  },
+  footerContent:{
+    flex: 1,
+    gap: 24
+  },
 })
